@@ -1,7 +1,7 @@
 {
-  "name": "thebox-frontend",
+  "name": "tfl",
   "version": "1.0.0",
-  "description": "frontend for TheBox website",
+  "description": "frontend for Technologies for Life website",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vladyche/thebox-frontend.git"
+    "url": "git+https://github.com/vm379/tfl.git"
   },
   "author": "Vladyslav Mishchenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vladyche/thebox-frontend/issues"
+    "url": "https://github.com/vm379/tfl/issues"
   },
-  "homepage": "https://github.com/vladyche/thebox-frontend#readme",
+  "homepage": "https://github.com/vm379/tfl#readme",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
