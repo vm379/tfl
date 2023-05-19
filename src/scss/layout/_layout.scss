@@ -52,6 +52,8 @@ body {
     z-index: 100;
     min-width: 320px;
 
+    background-color: #ffffff;
+
     >.container {
         margin: 0 auto;
         min-height: 65px;
@@ -215,8 +217,13 @@ body {
     >.container {
         margin: 0 auto;
 
-        display: flex;
-        flex-direction: row;
+        // display: flex;
+        // flex-direction: row;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        padding-bottom: 35px;
 
         @include media-breakpoint-only(xxl) {
             width: 1320px;
@@ -232,38 +239,44 @@ body {
 
         @include media-breakpoint-only(md) {
             width: 720px;
+            grid-template-columns: 2fr 1fr;
+            gap: 25px;
         }
 
         @include media-breakpoint-only(sm) {
             width: auto;
-            padding: 0 25px;
+            padding: 0 25px 25px 25px;
+
+            grid-template-columns: 2fr 1fr;
+            gap: 25px;
         }
 
         @include media-breakpoint-only(xs) {
             width: auto;
-            padding: 0 10px;
+            padding: 0 10px 25px 10px;
+
+            grid-template-columns: 1fr;
+            gap: 25px;
         }
 
         >.col-1 {
-            flex-basis: 25%;
+            // flex-basis: 25%;
         }
 
         >.col-2 {
-            flex-basis: 25%;
+            // flex-basis: 25%;
 
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            padding-bottom: 25px;
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: center;
         }
 
         >.col-3 {
-            flex-basis: 25%;
+            // flex-basis: 25%;
         }
 
         >.col-4 {
-            flex-basis: 25%;
+            // flex-basis: 25%;
         }
     }
 }
