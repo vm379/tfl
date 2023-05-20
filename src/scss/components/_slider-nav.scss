@@ -1,0 +1,120 @@
+@keyframes width {
+
+    0%,
+    100% {
+        width: 3vh;
+    }
+
+    50% {
+        width: 15vh;
+    }
+}
+
+.main-slider--nav {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    >.col-1 {
+        flex-basis: 40%;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            flex-basis: 50%;
+        }
+
+        @include media-breakpoint-only(sm) {
+            flex-basis: 50%;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-basis: 50%;
+        }
+    }
+
+    >.col-2 {
+        flex-basis: 60%;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            flex-basis: 50%;
+        }
+
+        @include media-breakpoint-only(sm) {
+            flex-basis: 50%;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-basis: 50%;
+        }
+    }
+}
+
+.main-slider--nav-l {
+    height: 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    cursor: pointer;
+
+    .b {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        .icon {}
+
+        .line {
+            width: 218px;
+            height: 2px;
+
+            background: #ffffff;
+            animation: width 4.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+        }
+    }
+}
+
+.main-slider--nav-r {
+    height: 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    cursor: pointer;
+
+    .b {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .icon {}
+
+        .line {
+            width: 218px;
+            height: 2px;
+
+            background: #99BDD1;
+            animation: width 4.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+        }
+    }
+}
