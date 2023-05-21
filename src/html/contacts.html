@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @@include('blocks/head/head.html', {"title":"Contacts"})
+    @@include('layout-blocks/head/head.html', {"title":"Contacts"})
 </head>
 
 <body class="body">
@@ -10,19 +10,69 @@
         <div class="container">
 
             <!-- header -->
-            @@include('blocks/header/header.html')
+            @@include('layout-blocks/header/header.html')
             <!-- end header -->
 
             <main class="main">
+                <div class="page-content">
+                    <div class="container">
+                        <div class="b-page-title">
+                            <h2 class="title">Контакти</h2>
+                        </div>
 
+                        <div class="contacts">
+                            <div class="container">
+                                <div class="col-1">
+                                    <div class="b-page-contacts">
+                                        <h4>ТОВ «ТЕХНОЛОГІЇ ДЛЯ ЖИТТЯ»</h4>
+
+                                        <ul class="page-contacts-list">
+                                            <li class="item">
+                                                <a href="tel:+38 (044) 467-76-32" class="link">+38 (044) 467-76-32
+                                                    (тел/факс)</a>
+                                            </li>
+
+                                            <li class="item">
+                                                <a href="tel:+38(067) 508-777-9" class="link">+38(067) 508-777-9
+                                                    (GSM)</a>
+                                            </li>
+
+                                            <li class="item">
+                                                <a href="tel:facebook.com/Tech4lifeLLC"
+                                                    class="link">facebook.com/tech4lifelcc</a>
+                                            </li>
+
+                                            <li class="item">
+                                                <a href="mailto:office@t4l.com.ua" class="link">office@t4l.com.ua</a>
+                                            </li>
+
+                                            <li class="item address">
+                                                <span class="t">Україна, 04073, м. Київ, <br>
+                                                    пр. Степана Бандери, 21 оф. 305</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map"></div>
             </main>
 
             <!-- footer -->
-            @@include('blocks/footer/footer.html')
+            @@include('layout-blocks/footer/footer.html')
             <!-- end footer -->
 
         </div>
     </div>
+
+    <!-- mobile-menu -->
+    @@include('layout-blocks/menu/mobile.html')
+    <!-- end mobile-menu -->
 
     <script src="./js/script.js"></script>
 </body>

@@ -1,0 +1,52 @@
+.page-content {
+
+    >.container {
+        margin: 0 auto;
+
+        @include media-breakpoint-only(xxl) {
+            width: 1320px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            width: 1140px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            width: 960px;
+        }
+
+        @include media-breakpoint-only(md) {
+            width: 720px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            width: auto;
+            padding: 0 25px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            width: auto;
+            padding: 0 10px;
+        }
+    }
+}
+
+.b-page-title {
+
+    .title {
+        margin: 0;
+        padding: 0 0 15px 0;
+        font-family: "Exo 2", sans-serif;
+        font-size: 16px;
+        color: #3C3C3C;
+    }
+}
+
+.article {
+
+    p {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        color: #717171;
+    }
+}

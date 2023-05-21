@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @@include('blocks/head/head.html', {"title":"Equipment"})
+    @@include('layout-blocks/head/head.html', {"title":"Equipment"})
 </head>
 
 <body class="body">
@@ -10,19 +10,129 @@
         <div class="container">
 
             <!-- header -->
-            @@include('blocks/header/header.html')
+            @@include('layout-blocks/header/header.html')
             <!-- end header -->
 
             <main class="main">
+                <div class="page-content">
+                    <div class="container">
+                        <div class="b-page-title">
+                            <h2 class="title">Обладнання</h2>
+                        </div>
 
+                        <div class="equipment-cards">
+                            <a href="" class="link">
+                                <div class="equipment-card">
+                                    <div class="row-1">
+                                        <img src="../img/equipment/operating-room.jpeg" alt="">
+                                    </div>
+
+                                    <div class="row-2">
+                                        <h3 class="title">Операційні</h3>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="" class="link">
+                                <div class="equipment-card">
+                                    <div class="row-1">
+                                        <img src="../img/equipment/operating-room.jpeg" alt="">
+                                    </div>
+
+                                    <div class="row-2">
+                                        <h3 class="title">Хірургічні інструменти</h3>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="" class="link">
+                                <div class="equipment-card">
+                                    <div class="row-1">
+                                        <img src="../img/equipment/operating-room.jpeg" alt="">
+                                    </div>
+
+                                    <div class="row-2">
+                                        <h3 class="title">Нейрохірургія</h3>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="" class="link">
+                                <div class="equipment-card">
+                                    <div class="row-1">
+                                        <img src="../img/equipment/operating-room.jpeg" alt="">
+                                    </div>
+
+                                    <div class="row-2">
+                                        <h3 class="title">Радіологія</h3>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="" class="link">
+                                <div class="equipment-card">
+                                    <div class="row-1">
+                                        <img src="../img/equipment/operating-room.jpeg" alt="">
+                                    </div>
+
+                                    <div class="row-2">
+                                        <h3 class="title">Кардіологія</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <article class="article">
+                            <!-- <p>Обладнання</p>
+
+                            <ul class="">
+                                <li class="item">
+                                    <a href="operational.html" class="link">
+                                        Операційні
+                                    </a>
+                                </li>
+
+                                <li class="item">
+                                    <a href="surgical-instruments.html" class="link">
+                                        Хірургічні інструменти
+                                    </a>
+                                </li>
+
+                                <li class="item">
+                                    <a href="neurosurgery.html" class="link">
+                                        Нейрохірургія
+                                    </a>
+                                </li>
+
+                                <li class="item">
+                                    <a href="radiology.html" class="link">
+                                        Радіологія
+                                    </a>
+                                </li>
+
+                                <li class="item">
+                                    <a href="cardiology.html" class="link">
+                                        Кардіологія
+                                    </a>
+                                </li>
+                            </ul> -->
+
+
+                        </article>
+                    </div>
+                </div>
             </main>
 
             <!-- footer -->
-            @@include('blocks/footer/footer.html')
+            @@include('layout-blocks/footer/footer.html')
             <!-- end footer -->
 
         </div>
     </div>
+
+    <!-- mobile-menu -->
+    @@include('layout-blocks/menu/mobile.html')
+    <!-- end mobile-menu -->
 
     <script src="./js/script.js"></script>
 </body>

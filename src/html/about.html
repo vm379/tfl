@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @@include('blocks/head/head.html', {"title":"About"})
+    @@include('layout-blocks/head/head.html', {"title":"About"})
 </head>
 
 <body class="body">
@@ -10,19 +10,34 @@
         <div class="container">
 
             <!-- header -->
-            @@include('blocks/header/header.html')
+            @@include('layout-blocks/header/header.html')
             <!-- end header -->
 
             <main class="main">
+                <div class="page-content">
+                    <div class="container">
+                        <div class="b-page-title">
+                            <h2 class="title">Про Нас</h2>
+                        </div>
 
+                        <article class="article">
+                            <p>Text about company</p>
+
+                        </article>
+                    </div>
+                </div>
             </main>
 
             <!-- footer -->
-            @@include('blocks/footer/footer.html')
+            @@include('layout-blocks/footer/footer.html')
             <!-- end footer -->
 
         </div>
     </div>
+
+    <!-- mobile-menu -->
+    @@include('layout-blocks/menu/mobile.html')
+    <!-- end mobile-menu -->
 
     <script src="./js/script.js"></script>
 </body>

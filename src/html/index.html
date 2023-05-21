@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @@include('blocks/head/head.html', {"title":"Home"})
+    @@include('layout-blocks/head/head.html', {"title":"Home"})
 </head>
 
 <body class="body">
@@ -10,7 +10,7 @@
         <div class="container">
 
             <!-- header -->
-            @@include('blocks/header/header.html')
+            @@include('layout-blocks/header/header.html')
             <!-- end header -->
 
             <main class="main">
@@ -451,11 +451,15 @@
             </main>
 
             <!-- footer -->
-            @@include('blocks/footer/footer.html')
+            @@include('layout-blocks/footer/footer.html')
             <!-- end footer -->
 
         </div>
     </div>
+
+    <!-- mobile-menu -->
+    @@include('layout-blocks/menu/mobile.html')
+    <!-- end mobile-menu -->
 
     <script src="./js/script.js"></script>
 </body>

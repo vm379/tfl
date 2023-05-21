@@ -1,0 +1,131 @@
+.main-menu-mobile {
+    display: none;
+    opacity: 0;
+}
+
+.main-menu-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 100;
+
+    background: #000000e0;
+
+    >.container {
+        height: 100vh;
+        position: relative;
+    }
+}
+
+.mobile-nav-panel {
+    width: 225px;
+
+    position: absolute;
+    top: 0;
+    right: -225px;
+    bottom: 0;
+    left: auto;
+
+    transform: translateX(0);
+    transition: transform .2s linear;
+
+    background: #A1A1A1;
+    overflow: scroll;
+
+    .top {
+        width: 225px;
+        height: 50px;
+
+        position: fixed;
+        top: 0;
+
+        background: #A1A1A1;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        .close {
+            width: 100px;
+            height: 40px;
+
+            margin-right: 20px;
+
+            background: none;
+            border: none;
+            margin: 0;
+            padding: 0;
+            outline: none;
+
+            font-family: "Exo 2", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+
+            color: #a92929;
+            text-transform: uppercase;
+            background: none;
+
+            cursor: pointer;
+        }
+    }
+
+    .nav {
+        padding: 50px 0 0 0;
+    }
+}
+
+.mobile-main-nav {
+    margin: 15px 0 0 0;
+    padding: 0;
+    list-style: none;
+
+    .item {
+
+        .link {
+            display: block;
+            text-decoration: none;
+
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+
+            color: #f5f5f5;
+            text-decoration: none;
+
+            padding: 10px 25px;
+
+            &:hover {
+                color: #272727;
+            }
+        }
+    }
+
+    .active {
+
+        .link {
+            color: #272727;
+        }
+    }
+}
+
+.d {
+    display: block;
+}
+
+.a {
+    opacity: 1;
+}
+
+.scrolloff {
+    overflow: hidden;
+}
+
+.open {
+    transform: translateX(-225px);
+}
