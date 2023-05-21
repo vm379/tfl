@@ -23,7 +23,7 @@ body {
         display: grid;
 
         // (header:fixed) 
-        // 1fr div:main-content 
+        // 1fr div:main 
         // auto div:footer 
         grid-template-rows: 1fr auto;
 
@@ -162,36 +162,6 @@ body {
 
 .main {
     padding-top: 125px;
-
-    >.container {
-        margin: 0 auto;
-
-        @include media-breakpoint-only(xxl) {
-            width: 1320px;
-        }
-
-        @include media-breakpoint-only(xl) {
-            width: 1140px;
-        }
-
-        @include media-breakpoint-only(lg) {
-            width: 960px;
-        }
-
-        @include media-breakpoint-only(md) {
-            width: 720px;
-        }
-
-        @include media-breakpoint-only(sm) {
-            width: auto;
-            padding: 0 25px;
-        }
-
-        @include media-breakpoint-only(xs) {
-            width: auto;
-            padding: 0 10px;
-        }
-    }
 }
 
 .footer {}

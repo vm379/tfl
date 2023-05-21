@@ -2,6 +2,40 @@
     position: relative;
 
     >.container {
+        margin: 0 auto;
+
+        @include media-breakpoint-only(xxl) {
+            width: 1320px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            width: 1140px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            width: 960px;
+        }
+
+        @include media-breakpoint-only(md) {
+            width: 720px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            width: auto;
+            padding: 0 25px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            width: auto;
+            padding: 0 10px;
+        }
+    }
+}
+
+.b-main-slider {
+    position: relative;
+
+    .columns {
         display: flex;
         flex-direction: row;
 
@@ -76,6 +110,61 @@
             @include media-breakpoint-only(xs) {
                 position: static;
                 flex-basis: auto;
+            }
+        }
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+
+        position: absolute;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        >.col-1 {
+            flex-basis: 40%;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {
+                flex-basis: 50%;
+            }
+
+            @include media-breakpoint-only(sm) {
+                flex-basis: 50%;
+            }
+
+            @include media-breakpoint-only(xs) {
+                flex-basis: 50%;
+            }
+        }
+
+        >.col-2 {
+            flex-basis: 60%;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {
+                flex-basis: 50%;
+            }
+
+            @include media-breakpoint-only(sm) {
+                flex-basis: 50%;
+            }
+
+            @include media-breakpoint-only(xs) {
+                flex-basis: 50%;
             }
         }
     }
