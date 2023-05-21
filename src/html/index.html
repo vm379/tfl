@@ -2,11 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    @@include('blocks/head/head.html', {"title":"Home"})
 </head>
 
 <body class="body">
@@ -14,488 +10,435 @@
         <div class="container">
 
             <!-- header -->
-            <header class="header">
-                <div class="container">
-                    <a href="/" class="logo-link">
-                        <img src="../img/logo/logo-no-background.png" alt="logo" class="img">
-                    </a>
+            @@include('blocks/header/header.html')
+            <!-- end header -->
 
-                    <div class="col">
-                        <div class="b-header-menu">
-                            <div class="menu">
-                                <nav class="main-nav">
-                                    <ul class="main-menu">
-                                        <li class="item">
-                                            <a href="about.html" class="link">Про Нас</a>
-                                        </li>
+            <main class="main">
+                <div class="main-slider">
+                    <div class="container">
+                        <div class="b-main-slider">
+                            <div class="columns">
+                                <div class="col-1">
+                                    <div class="website-titles">
+                                        <div class="title">
+                                            <span class="t">Компанія</span>
+                                        </div>
 
-                                        <li class="item">
-                                            <a href="equipment.html" class="link">Обладнання</a>
-                                        </li>
+                                        <div class="name">
+                                            <span class="t">Технології <br> для життя</span>
+                                        </div>
 
-                                        <li class="item">
-                                            <a href="manufacturers.html" class="link">Виробники</a>
-                                        </li>
+                                        <div class="motto">
+                                            <span class="t">медичне обладнання <br> від кращих
+                                                виробників</span>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                        <li class="item">
-                                            <a href="blog.html" class="link">Блог</a>
-                                        </li>
-
-                                        <li class="item">
-                                            <a href="contacts.html" class="link">Контакти</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-
-                            <div class="lang">
-                                <div class="lang-select">
-
-                                    <!-- ua lang img icon -->
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAb1BMVEUAhP8AfP0Ac/oAZ/UAV/B5yv9wxv5iwf1WvP1Ot/gAQOlMt/1Bs/s1rfkpqPdBsfYdovUAkciK0edqwuBautpNtdZAr9IATZr43QD8/GX6+kn5+Tr4+C329iD09BTy8g309DHguQDy8iruzwDnwwAuoRPoAAAASElEQVR4AU3MAQYDQRAF0Ve9WRAQYO5/zUgSDIxf8DQdiGR3I7v0YOLS3ns4PPt8Wq86vn6vVht7NRzG0OHRSpDb8Gt5IvjAHy/kBL+aIRygAAAAAElFTkSuQmCC"
-                                        alt="ua">
-
-                                    <!-- en lang img  icon-->
-                                    <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="en">     -->
-
+                                <div class="col-2">
+                                    <div class="slider">
+                                        <img src="../img/main-slider/main-slider-1.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="btn">
-                                <div class="mobile-menu-btn">
-                                    <div class="line"></div>
-                                    <div class="line"></div>
-                                    <div class="line"></div>
+                            <div class="nav">
+                                <div class="col-1">
+                                    <div class="main-slider--nav-l">
+                                        <div class="b">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAARCAYAAAAL4VbbAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABJSURBVHgB7ZKxEQAgCMQYwREcxY10A93MURjlhdOCSug1d3QJ1RM5AGhymQLiwIblUkRU+jNiMeIkD/1mgvEDJ2DcVmeCirPnBXxw7BS/jhPNAAAAAElFTkSuQmCC"
+                                                alt="" class="icon">
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-2">
+                                    <div class="main-slider--nav-r">
+                                        <div class="b">
+                                            <div class="line"></div>
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAARCAYAAAAL4VbbAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC1SURBVHgBjdLBDcIgFAbgBxM4AhsYNrBpHMRT40k3gE7gseJFt/Ai4gYEXcSzB5A2pYm2QP8Lj+T7CYcH4NMoTYQ0e8gEn5VeYIeVnw9Cap7Em4K+weFLf2WpAgqDkC8GYHto66qkPIrnFNB/O1UY4VRhEscKUdzmdH8q59yq49YWOP6y4QH68O2aPlAM+oMFWJXLevLPMTjCKfiDc3DAc2CH2637WKz9TFJwSHPV5HgzO8jkC4P6a+EJp5apAAAAAElFTkSuQmCC"
+                                                alt="" class="icon">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
-            <!-- end header -->
 
-            <!-- main -->
-            <main class="main">
-                <div class="container">
-                    <div class="main-slider">
-                        <div class="container">
-                            <div class="b-main-slider">
-                                <div class="columns">
+                <div class="about b-landing">
+                    <div class="container">
+                        <div class="about-columns">
+                            <div class="col-1">
+                                <div class="about--col-1">
+                                    <h2 class="title">Про Компанію</h2>
+
+                                    <div class="description">
+                                        <div class="about--description">
+                                            <p>
+                                                Тільки, коли медичні технології допомагають людям, ми можемо назвати
+                                                їх прогресивними та інноваційними.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="more">
+                                        <a href="" class="link">Докладніше</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <div class="about--col-2">
+                                    <p>Компанія ТОВ «Технології для життя» спеціалізується на пошуку, розвитку,
+                                        дистрибуції, впровадженні та підтримці передових інноваційних медичних
+                                        технологій в галузі нейрохірургії, малоінвазивної хірургії, ендоскопії,
+                                        онкології, радіології та інтервенційної радіології.</p>
+
+                                    <p>Володіючи багаторічним досвідом, глибокими знаннями і високими стандартами в
+                                        області інновацій, точності, якості матеріалів, функціональності і
+                                        надійності, ми пропонуємо рішення, інструменти, продукти та системи
+                                        продуктів, які ідеально відповідають потребам хірургів.</p>
+
+                                    <p>Співробітники та інженерно-монтажна група нашої компанії завжди готова до
+                                        реалізації запитів наших клієнтів! </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="equipment-slider b-landing">
+                    <div class="container">
+                        <div class="equipment-slider-columns">
+                            <div class="col-1">
+                                <div class="equipment-slider--col-1">
+                                    <h2 class="title">Радіологія</h2>
+
+                                    <div class="description">
+                                        <div class="equipment-slider--description">
+                                            <p>Комбінуємо поліпшену діагностику, зручність для пацієнтів і
+                                                економічну ефективність </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="benefits">
+                                        <ul class="equipment-slider--benefits">
+                                            <li class="item">
+                                                <div class="equipment-slider--benefit">
+                                                    <div class="i"></div>
+                                                    <div class="text">
+                                                        <span class="t">Точність</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">
+                                                <div class="equipment-slider--benefit">
+                                                    <div class="i"></div>
+                                                    <div class="text">
+                                                        <span class="t">Інноваційність</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">
+                                                <div class="equipment-slider--benefit">
+                                                    <div class="i"></div>
+                                                    <div class="text">
+                                                        <span class="t">Оптимізація</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="more">
+                                        <a href="" class="link">Докладніше</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <div class="b-equipment-slider">
                                     <div class="col-1">
-                                        <div class="website-titles">
-                                            <div class="title"><span class="t">Компанія</span></div>
-                                            <div class="name"><span class="t">Технології <br> для життя</span></div>
-                                            <div class="motto"><span class="t">медичне обладнання <br> від кращих
-                                                    виробників</span>
+                                        <div class="b-equipment-slider--col-1">
+                                            <ul class="b-equipment-slider--menu">
+                                                <li class="item"><span class="t">STILLE</span></li>
+                                                <li class="item"><span class="t">INTRASENSE</span></li>
+                                                <li class="item"><span class="t">STARMED</span></li>
+                                                <li class="item"><span class="t">MEDTRON</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2">
+
+                                        <!-- slider down-lg: display: none; -->
+                                        <ul class="b-equipment-slides">
+                                            <li class="item">
+                                                <img src="../img/radiology-slider/medtron-slide.png" alt="">
+
+                                                <div class="b-equipment-slide--description">
+                                                    <div class="container">
+                                                        <p>
+                                                            MEDTRON AG — передова німецька компанія, що працює в
+                                                            галузі медичної техніки по всьому світу. MEDTRON AG є
+                                                            провідним європейським виробником інжекторів для
+                                                            введення контрастної речовини найвищої якості.
+                                                            Інноваційні інжекторні системи німецького виробництва
+                                                            використовуються у самих передових дослідженнях в
+                                                            області комп'ютерної і магнітно-резонансної томографії,
+                                                            а також ангіографії.
+                                                        </p>
+
+                                                        <div class="more">
+                                                            <a href="" class="link">Детальніше</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- end -->
+
+                                        <!-- slider for mobile devices with manufacturers links -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="equipment-slider b-landing">
+                    <div class="container">
+                        <div class="equipment-slider-columns">
+                            <div class="col-1">
+                                <div class="equipment-slider--col-1">
+                                    <h2 class="title">Нейрохірургія</h2>
+
+                                    <div class="description">
+                                        <div class="equipment-slider--description">
+                                            <p>
+                                                Ми пропонуємо продукти, які створюються з використанням самих
+                                                передових технологій виробництва та забезпечують якість №1 в світі.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="benefits">
+                                        <ul class="equipment-slider--benefits">
+                                            <li class="item">
+                                                <div class="equipment-slider--benefit">
+                                                    <div class="i"></div>
+                                                    <div class="text">
+                                                        <span class="t">Якість</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">
+                                                <div class="equipment-slider--benefit">
+                                                    <div class="i"></div>
+                                                    <div class="text">
+                                                        <span class="t">Технологічність</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">
+                                                <div class="equipment-slider--benefit">
+                                                    <div class="i"></div>
+                                                    <div class="text">
+                                                        <span class="t">Ефективність</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="more">
+                                        <a href="" class="link">Докладніше</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <div class="b-equipment-slider">
+                                    <div class="col-1">
+                                        <div class="b-equipment-slider--col-1">
+                                            <ul class="b-equipment-slider--menu">
+                                                <li class="item"><span class="t">NSK</span></li>
+                                                <li class="item"><span class="t">EVONOS</span></li>
+                                                <li class="item"><span class="t">MISONIX</span></li>
+                                                <li class="item"><span class="t">MIZUHO</span></li>
+                                                <li class="item"><span class="t">GLARONAV</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2">
+
+                                        <!-- slider down-lg: display: none; -->
+                                        <ul class="b-equipment-slides">
+                                            <li class="item">
+                                                <img src="../img/radiology-slider/medtron-slide.png" alt="">
+
+                                                <div class="b-equipment-slide--description">
+                                                    <div class="container">
+                                                        <p>
+                                                            Компанія evonos GmbH & Co. KG досягає прогресу в області
+                                                            медичних технологій шляхом розробки та виготовлення
+                                                            інструментів для нейрохірургії, які корисні як для
+                                                            хірургів, так і для пацієнтів. Дані товари і послуги
+                                                            призначені
+                                                            для забезпечення надійної діагностики стану здоров'я
+                                                            пацієнтів, малоінвазивного лікування, спрощення
+                                                            операційних
+                                                            процедур і поліпшення якості життя.
+                                                        </p>
+
+                                                        <div class="more">
+                                                            <a href="" class="link">Детальніше</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- end -->
+
+                                        <!-- slider for mobile devices with manufacturers links -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news b-landing">
+                    <div class="container">
+                        <div class="news-rows">
+                            <div class="row-1">
+                                <div class="news--title-block">
+                                    <div class="col-1">
+                                        <div class="about--col-1">
+                                            <h2 class="title">Новини</h2>
+
+                                            <div class="description">
+                                                <div class="about--description">
+                                                    <p>
+                                                        Інноваційні дослідження, революційні продукти і нові
+                                                        технології
+                                                        в
+                                                        сфері
+                                                        діагностики та хірургії.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="more">
+                                                <a href="" class="link">Наш Блог</a>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="col-2">
-                                        <div class="slider">
-                                            <img src="../img/main-slider/main-slider-1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="nav">
-                                    <div class="col-1">
-                                        <div class="main-slider--nav-l">
-                                            <div class="b">
-                                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAARCAYAAAAL4VbbAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABJSURBVHgB7ZKxEQAgCMQYwREcxY10A93MURjlhdOCSug1d3QJ1RM5AGhymQLiwIblUkRU+jNiMeIkD/1mgvEDJ2DcVmeCirPnBXxw7BS/jhPNAAAAAElFTkSuQmCC"
-                                                    alt="" class="icon">
-                                                <div class="line"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-2">
-                                        <div class="main-slider--nav-r">
-                                            <div class="b">
-                                                <div class="line"></div>
-                                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAARCAYAAAAL4VbbAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC1SURBVHgBjdLBDcIgFAbgBxM4AhsYNrBpHMRT40k3gE7gseJFt/Ai4gYEXcSzB5A2pYm2QP8Lj+T7CYcH4NMoTYQ0e8gEn5VeYIeVnw9Cap7Em4K+weFLf2WpAgqDkC8GYHto66qkPIrnFNB/O1UY4VRhEscKUdzmdH8q59yq49YWOP6y4QH68O2aPlAM+oMFWJXLevLPMTjCKfiDc3DAc2CH2637WKz9TFJwSHPV5HgzO8jkC4P6a+EJp5apAAAAAElFTkSuQmCC"
-                                                    alt="" class="icon">
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="about b-landing">
-                        <div class="container">
-                            <div class="about-columns">
-                                <div class="col-1">
-                                    <div class="about--col-1">
-                                        <h2 class="title">Про Компанію</h2>
+                            <div class="row-2">
+                                <div class="news-posts">
+                                    <div class="news-post">
+                                        <div class="empty"></div>
 
-                                        <div class="description">
-                                            <div class="about--description">
-                                                <p>
-                                                    Тільки, коли медичні технології допомагають людям, ми можемо назвати
-                                                    їх прогресивними та інноваційними.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="more">
-                                            <a href="" class="link">Докладніше</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-2">
-                                    <div class="about--col-2">
-                                        <p>Компанія ТОВ «Технології для життя» спеціалізується на пошуку, розвитку,
-                                            дистрибуції, впровадженні та підтримці передових інноваційних медичних
-                                            технологій в галузі нейрохірургії, малоінвазивної хірургії, ендоскопії,
-                                            онкології, радіології та інтервенційної радіології.</p>
-
-                                        <p>Володіючи багаторічним досвідом, глибокими знаннями і високими стандартами в
-                                            області інновацій, точності, якості матеріалів, функціональності і
-                                            надійності, ми пропонуємо рішення, інструменти, продукти та системи
-                                            продуктів, які ідеально відповідають потребам хірургів.</p>
-
-                                        <p>Співробітники та інженерно-монтажна група нашої компанії завжди готова до
-                                            реалізації запитів наших клієнтів! </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="equipment-slider b-landing">
-                        <div class="container">
-                            <div class="equipment-slider-columns">
-                                <div class="col-1">
-                                    <div class="equipment-slider--col-1">
-                                        <h2 class="title">Радіологія</h2>
-
-                                        <div class="description">
-                                            <div class="equipment-slider--description">
-                                                <p>Комбінуємо поліпшену діагностику, зручність для пацієнтів і
-                                                    економічну ефективність </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="benefits">
-                                            <ul class="equipment-slider--benefits">
-                                                <li class="item">
-                                                    <div class="equipment-slider--benefit">
-                                                        <div class="i"></div>
-                                                        <div class="text">
-                                                            <span class="t">Точність</span>
+                                        <div class="container">
+                                            <div class="row-1">
+                                                <div class="news-post--inner">
+                                                    <img src="../img/main-slider/main-slider-1.jpg" alt="">
+                                                    <div class="news-post--title">
+                                                        <div class="row-1">
+                                                            <h4 class="title">Вебінар «Радіочастотна абляція
+                                                                щитовидної
+                                                                залози»</h4>
                                                         </div>
-                                                    </div>
-                                                </li>
 
-                                                <li class="item">
-                                                    <div class="equipment-slider--benefit">
-                                                        <div class="i"></div>
-                                                        <div class="text">
-                                                            <span class="t">Інноваційність</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li class="item">
-                                                    <div class="equipment-slider--benefit">
-                                                        <div class="i"></div>
-                                                        <div class="text">
-                                                            <span class="t">Оптимізація</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="more">
-                                            <a href="" class="link">Докладніше</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-2">
-                                    <div class="b-equipment-slider">
-                                        <div class="col-1">
-                                            <div class="b-equipment-slider--col-1">
-                                                <ul class="b-equipment-slider--menu">
-                                                    <li class="item"><span class="t">STILLE</span></li>
-                                                    <li class="item"><span class="t">INTRASENSE</span></li>
-                                                    <li class="item"><span class="t">STARMED</span></li>
-                                                    <li class="item"><span class="t">MEDTRON</span></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-2">
-
-                                            <!-- slider down-lg: display: none; -->
-                                            <ul class="b-equipment-slides">
-                                                <li class="item">
-                                                    <img src="../img/radiology-slider/medtron-slide.png" alt="">
-
-                                                    <div class="b-equipment-slide--description">
-                                                        <div class="container">
-                                                            <p>
-                                                                MEDTRON AG — передова німецька компанія, що працює в
-                                                                галузі медичної техніки по всьому світу. MEDTRON AG є
-                                                                провідним європейським виробником інжекторів для
-                                                                введення контрастної речовини найвищої якості.
-                                                                Інноваційні інжекторні системи німецького виробництва
-                                                                використовуються у самих передових дослідженнях в
-                                                                області комп'ютерної і магнітно-резонансної томографії,
-                                                                а також ангіографії.
-                                                            </p>
-
-                                                            <div class="more">
-                                                                <a href="" class="link">Детальніше</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <!-- end -->
-
-                                            <!-- slider for mobile devices with manufacturers links -->
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="equipment-slider b-landing">
-                        <div class="container">
-                            <div class="equipment-slider-columns">
-                                <div class="col-1">
-                                    <div class="equipment-slider--col-1">
-                                        <h2 class="title">Нейрохірургія</h2>
-
-                                        <div class="description">
-                                            <div class="equipment-slider--description">
-                                                <p>
-                                                    Ми пропонуємо продукти, які створюються з використанням самих
-                                                    передових технологій виробництва та забезпечують якість №1 в світі.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="benefits">
-                                            <ul class="equipment-slider--benefits">
-                                                <li class="item">
-                                                    <div class="equipment-slider--benefit">
-                                                        <div class="i"></div>
-                                                        <div class="text">
-                                                            <span class="t">Якість</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li class="item">
-                                                    <div class="equipment-slider--benefit">
-                                                        <div class="i"></div>
-                                                        <div class="text">
-                                                            <span class="t">Технологічність</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li class="item">
-                                                    <div class="equipment-slider--benefit">
-                                                        <div class="i"></div>
-                                                        <div class="text">
-                                                            <span class="t">Ефективність</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="more">
-                                            <a href="" class="link">Докладніше</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-2">
-                                    <div class="b-equipment-slider">
-                                        <div class="col-1">
-                                            <div class="b-equipment-slider--col-1">
-                                                <ul class="b-equipment-slider--menu">
-                                                    <li class="item"><span class="t">NSK</span></li>
-                                                    <li class="item"><span class="t">EVONOS</span></li>
-                                                    <li class="item"><span class="t">MISONIX</span></li>
-                                                    <li class="item"><span class="t">MIZUHO</span></li>
-                                                    <li class="item"><span class="t">GLARONAV</span></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-2">
-
-                                            <!-- slider down-lg: display: none; -->
-                                            <ul class="b-equipment-slides">
-                                                <li class="item">
-                                                    <img src="../img/radiology-slider/medtron-slide.png" alt="">
-
-                                                    <div class="b-equipment-slide--description">
-                                                        <div class="container">
-                                                            <p>
-                                                                Компанія evonos GmbH & Co. KG досягає прогресу в області
-                                                                медичних технологій шляхом розробки та виготовлення
-                                                                інструментів для нейрохірургії, які корисні як для
-                                                                хірургів, так і для пацієнтів. Дані товари і послуги
-                                                                призначені
-                                                                для забезпечення надійної діагностики стану здоров'я
-                                                                пацієнтів, малоінвазивного лікування, спрощення
-                                                                операційних
-                                                                процедур і поліпшення якості життя.
-                                                            </p>
-
-                                                            <div class="more">
-                                                                <a href="" class="link">Детальніше</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <!-- end -->
-
-                                            <!-- slider for mobile devices with manufacturers links -->
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="news b-landing">
-                        <div class="container">
-                            <div class="news-rows">
-                                <div class="row-1">
-                                    <div class="news--title-block">
-                                        <div class="col-1">
-                                            <div class="about--col-1">
-                                                <h2 class="title">Новини</h2>
-
-                                                <div class="description">
-                                                    <div class="about--description">
-                                                        <p>
-                                                            Інноваційні дослідження, революційні продукти і нові
-                                                            технології
-                                                            в
-                                                            сфері
-                                                            діагностики та хірургії.
-                                                        </p>
-                                                    </div>
-                                                </div>
-
-                                                <div class="more">
-                                                    <a href="" class="link">Наш Блог</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-2">
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row-2">
-                                    <div class="news-posts">
-                                        <div class="news-post">
-                                            <div class="empty"></div>
-
-                                            <div class="container">
-                                                <div class="row-1">
-                                                    <div class="news-post--inner">
-                                                        <img src="../img/main-slider/main-slider-1.jpg" alt="">
-                                                        <div class="news-post--title">
-                                                            <div class="row-1">
-                                                                <h4 class="title">Вебінар «Радіочастотна абляція
-                                                                    щитовидної
-                                                                    залози»</h4>
-                                                            </div>
-
-                                                            <div class="row-2">
-                                                                <div class="news-post--more">
-                                                                    <a href="" class="link">Читати далі</a>
-                                                                </div>
+                                                        <div class="row-2">
+                                                            <div class="news-post--more">
+                                                                <a href="" class="link">Читати далі</a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
 
-                                                <div class="row-2">
-                                                    <div class="news-post--preview-text">
-                                                        <p>
-                                                            В якості офіційного представника та дистриб’ютора компанії
-                                                            Starmed
-                                                            Ми
-                                                            раді запросити Вас на 1-й відкритий Вебінар «Радіочастотна
-                                                            абляція
-                                                            щитовидної залози»! Лекція, яку проводить проф. Baek,
-                                                            включає в
-                                                            себе
-                                                            наступний розбір клінічних випадків досвідченими фахівцями в
-                                                            області
-                                                            радіочастотної абляция щитовидної залози (Проф. Too, Др. My
-                                                            та
-                                                            Проф.
-                                                            Lin)
-                                                        </p>
-                                                    </div>
+                                            <div class="row-2">
+                                                <div class="news-post--preview-text">
+                                                    <p>
+                                                        В якості офіційного представника та дистриб’ютора компанії
+                                                        Starmed
+                                                        Ми
+                                                        раді запросити Вас на 1-й відкритий Вебінар «Радіочастотна
+                                                        абляція
+                                                        щитовидної залози»! Лекція, яку проводить проф. Baek,
+                                                        включає в
+                                                        себе
+                                                        наступний розбір клінічних випадків досвідченими фахівцями в
+                                                        області
+                                                        радіочастотної абляция щитовидної залози (Проф. Too, Др. My
+                                                        та
+                                                        Проф.
+                                                        Lin)
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div class="news-post">
-                                            <div class="empty"></div>
+                                    <div class="news-post">
+                                        <div class="empty"></div>
 
-                                            <div class="container">
-                                                <div class="row-1">
-                                                    <div class="news-post--inner">
-                                                        <img src="../img/main-slider/main-slider-1.jpg" alt="">
-                                                        <div class="news-post--title">
-                                                            <div class="row-1">
-                                                                <h4 class="title">Вебінар «Радіочастотна абляція
-                                                                    щитовидної
-                                                                    залози»</h4>
-                                                            </div>
+                                        <div class="container">
+                                            <div class="row-1">
+                                                <div class="news-post--inner">
+                                                    <img src="../img/main-slider/main-slider-1.jpg" alt="">
+                                                    <div class="news-post--title">
+                                                        <div class="row-1">
+                                                            <h4 class="title">Вебінар «Радіочастотна абляція
+                                                                щитовидної
+                                                                залози»</h4>
+                                                        </div>
 
-                                                            <div class="row-2">
-                                                                <div class="news-post--more">
-                                                                    <a href="" class="link">Читати далі</a>
-                                                                </div>
+                                                        <div class="row-2">
+                                                            <div class="news-post--more">
+                                                                <a href="" class="link">Читати далі</a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
 
-                                                <div class="row-2">
-                                                    <div class="news-post--preview-text">
-                                                        <p>
-                                                            В якості офіційного представника та дистриб’ютора компанії
-                                                            Starmed
-                                                            Ми
-                                                            раді запросити Вас на 1-й відкритий Вебінар «Радіочастотна
-                                                            абляція
-                                                            щитовидної залози»! Лекція, яку проводить проф. Baek,
-                                                            включає в
-                                                            себе
-                                                            наступний розбір клінічних випадків досвідченими фахівцями в
-                                                            області
-                                                            радіочастотної абляция щитовидної залози (Проф. Too, Др. My
-                                                            та
-                                                            Проф.
-                                                            Lin)
-                                                        </p>
-                                                    </div>
+                                            <div class="row-2">
+                                                <div class="news-post--preview-text">
+                                                    <p>
+                                                        В якості офіційного представника та дистриб’ютора компанії
+                                                        Starmed
+                                                        Ми
+                                                        раді запросити Вас на 1-й відкритий Вебінар «Радіочастотна
+                                                        абляція
+                                                        щитовидної залози»! Лекція, яку проводить проф. Baek,
+                                                        включає в
+                                                        себе
+                                                        наступний розбір клінічних випадків досвідченими фахівцями в
+                                                        області
+                                                        радіочастотної абляция щитовидної залози (Проф. Too, Др. My
+                                                        та
+                                                        Проф.
+                                                        Lin)
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -506,144 +449,9 @@
                     </div>
                 </div>
             </main>
-            <!-- end main -->
 
             <!-- footer -->
-            <footer class="footer">
-                <div class="footer-main">
-                    <div class="container">
-                        <div class="col-1">
-                            <div class="b-footer-list">
-                                <h5>Контакти</h5>
-
-                                <ul class="footer-contacts">
-                                    <li class="item phone">
-                                        <span class="t">+38 (067) 508-777-9</span>
-                                    </li>
-
-                                    <li class="item phone">
-                                        <span class="t">+38 (044) 467-76-32</span>
-                                    </li>
-
-                                    <li class="item address">
-                                        <span class="t">Україна, 04073, м. Київ, <br> пр. Степана Бандери, 21 оф.
-                                            305</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-2">
-                            <div class="b-footer-list">
-                                <h5>Обладнання</h5>
-
-                                <ul class="footer-menu">
-                                    <li class="item">
-                                        <a href="" class="link">Операційні</a>
-                                    </li>
-
-                                    <li class="item">
-                                        <a href="" class="link">Хірургічні інструменти</a>
-                                    </li>
-
-                                    <li class="item">
-                                        <a href="" class="link">Нейрохірургія</a>
-                                    </li>
-
-                                    <li class="item">
-                                        <a href="" class="link">Радіологія</a>
-                                    </li>
-
-                                    <li class="item">
-                                        <a href="" class="link">Кардіологія</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-3">
-                            <div class="b-footer-list">
-                                <h5>Топ Виробники</h5>
-
-                                <ul class="footer-menu">
-                                    <li class="item">
-                                        <a href="" class="link">EVONOS</a>
-                                    </li>
-
-                                    <li class="item">
-                                        <a href="" class="link">MISONIX</a>
-                                    </li>
-
-                                    <li class="item">
-                                        <a href="" class="link">MIZUHO</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-4">
-                            <div class="b-footer-list">
-                                <h5>Для користувача</h5>
-
-                                <ul class="footer-menu">
-                                    <li class="item">
-                                        <a href="" class="link">Кабінет</a>
-                                    </li>
-
-                                    <li class="item">
-                                        <a href="" class="link">Політика конфіденційності</a>
-                                    </li>
-
-                                    <li class="item">
-                                        <a href="" class="link">Онлайн угода</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="col-1">
-                            <div class="footer-text-logo">
-                                <span class="t">Technology for Life LLC</span>
-                            </div>
-                        </div>
-
-                        <div class="col-2">
-                            <div class="footer-bottom--copyright">
-                                <span class="t">&#169; 2023</span>
-                            </div>
-                        </div>
-
-                        <div class="col-3">
-                            <ul class="footer-social">
-                                <li class="item">
-                                    <a href="" class="link">
-                                        <img src="data:@file/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAflBMVEUAAABAQGA4QFg4SGBAQFhASGA6QFo6RVo8RFw9Q1w9Rlk9Rlw+Rls9Qlo9RVo8Q1w8RVw7Qls7RFs+RFw8RFw9RFs+RFs+RF08Q1w+Q1o9Q1s9RV09Q1s9RFs9Q1w9RFw8RFw9RFw8RFw+RFs+RFw9Q1s9RVs9RV09RFw9RFwCxof2AAAAKXRSTlMAECAgICAwMEBQUFBfYGBvb3Bwf4CPj4+QkJ+foKCvr7+/z8/P39/f7+/pRR8AAAEjSURBVDjLjdVpW8MgDADgtNat3kdRK9MNZxnw//+gXY81JKGSTxzvEyD0AIiifj44H4LvDqqGZBRNb5Y46ascNoREbzk7Z72n7iMkoondLiRjl+ki2bBJ78zRzZ332T2yw041rKf+1L0+kWyXUlfzSCEeeAMUBjUkpOsCh0NKRWApwCEl2aGdHw+t9X7ZN8CWJDRyJWp4kbf4TYZfYZ8HNRzzoAOfBz2EPBhALvUY+KB4aQZbDN0K/FnmOlweBj2+hzYNC7Syujyc5/Sqj7sR3fTNr+gKC59THk+OloQavRirsCRFSMFxsPL/wpLflAiVcAMSNEtl7Rq0+HWzaYhdL7sU/C3JxSoZtvyTu7EcGvmL/2BiaNI/hurJfI6tN6O20dQf+lGb3f5r6eUAAAAASUVORK5CYII="
-                                            alt="fb">
-                                    </a>
-                                </li>
-
-                                <li class="item">
-                                    <a href="" class="link">
-                                        <img src="data:@file/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAh1BMVEUAAABAQFBAQGA4QFg4SGBAQFhASGA6QFo6RVo8RFw9Rlk+Q1s+Rls6RV09Qlo9RVo8Q1w8RVw+Q1w+RVw7Qls7RFs9RFs+RFw8RFw+RF08Q1w9Q1s9RV09Q1s9RFs9RFw8Q1w9Q1w9RFw9RFs8RFw9RFw8RFw+RFw9Q1s9RVs9RV09RFw9RFw2BbC6AAAALHRSTlMAEBAgICAgMDBAUF9fYGBgb29vb3BwcH+Aj5Cfn6CgoK+vr7C/v8/P39/f79rOzjQAAAE9SURBVDjLjZXdYoIwDIUPdAidzjmHs6M6fyZT5Lz/8+1CwBbawrkL/QhJmgSgr1hkUsQIK/7Qd5Ikq/PixYvJkpa0dGKzHkaS2uF1XdOh+qvPfdOjrc3t6NXO5LYMyPC5ZlBdnLM6DNZt7vvmwU1i6XynbOrc2nMAP06f0nLIDYATvS5nnVlJ4Us/BvDOCbI/dlZKVSyVKnhbpenyZlw6gKqz3gCU1ABOEQDE1+7oDsR0gNGjHokZZOIC8ao/AeDZeeJZRRNMSS4AFN1ZhswFqiZ+ZZQ8mQYKdzJDEMB9Cni12iAA/gLIp4BzmBUPgMKqqh/UduP6lT2utBzjdDMzydhwiXYM8/GubVSEOGWuioOfO9jLR03yBwC5e+1thgsy2Q+5i3Cv5h56kd4tniyPf83Y6VU08meAkKkYQv9xBqq1H4OqSQAAAABJRU5ErkJggg=="
-                                            alt="in">
-                                    </a>
-                                </li>
-
-                                <li class="item">
-                                    <a href="" class="link">
-                                        <img src="data:@file/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAk1BMVEUAAABAQFBAQGA4QFg4SGBAQFhASGA6QFo6RVo6RWA8RFw9Q1w9Rlw+Q1s+Rls6RV09Qlo9RVo9RV08Q1w8RVw+Q1w7Qls7RFs9RFs+RFw8RFw+RF08Q1w+Q1o+Q1w9Q1s9RV09Q1s9RFs9RFw8Q1w9Q1w9RFw9RFs8RFw9RFw8RFw+RFw9Q1s9RVs9RV09RFw9RFylzsSSAAAAMHRSTlMAEBAgICAgMDAwQFBQX19gYGBgb29vcHBwf4CPkJCQn5+goKCvr6+wv7/Pz9/f3+/R/1wDAAABRUlEQVQYGYXBiUKbQABF0RsISKdJq1Wz0AWpVUGBef//dU0IwhC2cxjw/Mj4HvO8h6RSrXz9tmaKydWTGMaEuQaSNQOPViPsgSs/NeFIz5MmPeE4asaR1qNmHWiEVrPsmotUC3JqRosMZ6lGVO9y5JyEahVqZD4EL1lq1fCAO7WiWLViRe1PocYeeFELbgudbKmtwlKNBCjVMhDEhWSoeaU+VeCp88rZzdeImlHHI1DnxxqXUcfHqGPoidWJiNT58HDl6hgCOcoNnVAOH0+OBEcqB1DJcaB1J8cH8Feu3HDxxcrxBuzkyLZcGCvXFvD0yX6nEabq8znJ1Sp/b4zZPOS6knBmtCiilmtBwkVgNcv6NHaataf1SzNiHM+a9ExPrAkxV3ZWI+yegSDVQOYzxqTqyQxTgtt/76pVyf2KBb658Vdc+w9wILqwHcHMfQAAAABJRU5ErkJggg=="
-                                            alt="tw">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            @@include('blocks/footer/footer.html')
             <!-- end footer -->
 
         </div>
