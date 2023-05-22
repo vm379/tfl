@@ -1,0 +1,226 @@
+.manufacturers {
+    padding-bottom: 100px;
+
+    .manufacturer {
+        margin: 25px 0 25px 0;
+
+        &:first-child {
+            margin: 0 0 25px 0;
+        }
+
+        &:last-child {
+            margin: 25px 0 0 0;
+        }
+    }
+}
+
+.manufacturer {
+    background-color: #99bdd1;
+
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+
+    >.container {
+        padding: 25px 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            flex-direction: column;
+            padding: 25px 20px;
+            align-items: normal;
+        }
+
+        @include media-breakpoint-only(sm) {
+            flex-direction: column;
+            padding: 25px 20px;
+            align-items: normal;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-direction: column;
+            padding: 25px 20px;
+            align-items: normal;
+        }
+
+        >.col-1 {
+            flex-basis: 35%;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {
+                flex-basis: auto;
+            }
+
+            @include media-breakpoint-only(sm) {
+                flex-basis: auto;
+            }
+
+            @include media-breakpoint-only(xs) {
+                flex-basis: auto;
+            }
+        }
+
+        >.col-2 {
+            flex-basis: 40%;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {
+                flex-basis: auto;
+            }
+
+            @include media-breakpoint-only(sm) {
+                flex-basis: auto;
+            }
+
+            @include media-breakpoint-only(xs) {
+                flex-basis: auto;
+            }
+        }
+
+        >.col-3 {
+            flex-basis: 25%;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {
+                flex-basis: auto;
+            }
+
+            @include media-breakpoint-only(sm) {
+                flex-basis: auto;
+            }
+
+            @include media-breakpoint-only(xs) {
+                flex-basis: auto;
+            }
+        }
+    }
+}
+
+.manufacturer-title {
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        padding-bottom: 15px;
+    }
+
+    @include media-breakpoint-only(sm) {
+        padding-bottom: 15px;
+    }
+
+    @include media-breakpoint-only(xs) {
+        padding-bottom: 15px;
+    }
+
+    .title {
+        margin: 0;
+        padding: 0;
+
+        font-family: "Exo 2", sans-serif;
+        font-size: 18px;
+
+        color: #717171;
+        text-align: center;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            text-align: left;
+        }
+
+        @include media-breakpoint-only(sm) {
+            text-align: left;
+        }
+
+        @include media-breakpoint-only(xs) {
+            text-align: left;
+        }
+    }
+}
+
+.manufacturer-description {
+
+    p {
+        margin: 15px 0 15px 0;
+        padding: 0;
+
+        font-size: 14px;
+        color: #717171;
+        font-family: "Roboto", sans-serif;
+
+        line-height: 22px;
+
+        &:first-child {
+            margin: 0 0 15px 0;
+        }
+
+        &:last-child {
+            margin: 15px 0 0 0;
+        }
+    }
+}
+
+.manufacturer-link {
+    text-align: center;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        padding-top: 25px;
+    }
+
+    @include media-breakpoint-only(sm) {
+        padding-top: 25px;
+    }
+
+    @include media-breakpoint-only(xs) {
+        padding-top: 25px;
+    }
+
+    .link {
+        display: inline-block;
+        padding-bottom: 2px;
+
+        font-size: 14px;
+        color: #717171;
+        font-family: "Roboto", sans-serif;
+
+        text-decoration: none;
+        border-bottom: 1px solid #717171;
+    }
+}
