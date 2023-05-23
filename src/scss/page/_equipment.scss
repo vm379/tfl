@@ -60,10 +60,20 @@
     }
 }
 
+.producers {}
+
 //equipment page
-.b-equipment {
+.producer {
     margin: 100px 0 100px 0;
     border-bottom: 1px solid #3e79bf;
+
+    &:first-child {
+        margin: 0 0 100px 0;
+    }
+
+    &:last-child {
+        margin: 100px 0 0;
+    }
 
     >.title {
         margin: 0;
@@ -128,7 +138,7 @@
 }
 
 .equipment-page-card--title {
-    padding: 15px 15px 25px 15px;
+    padding: 25px 15px;
 
     .title {
         margin: 0;
