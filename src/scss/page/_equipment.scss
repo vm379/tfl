@@ -60,10 +60,12 @@
     }
 }
 
-.producers {}
+.equipment-blocks {
+    margin: 25px 0;
+}
 
 //equipment page
-.producer {
+.equipment-block {
     margin: 100px 0 100px 0;
     border-bottom: 1px solid #3e79bf;
 
@@ -73,6 +75,10 @@
 
     &:last-child {
         margin: 100px 0 0;
+    }
+
+    &:only-child {
+        margin: 0 0 0 0;
     }
 
     >.title {
