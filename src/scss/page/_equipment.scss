@@ -59,3 +59,129 @@
         }
     }
 }
+
+//equipment page
+.b-equipment {
+    margin: 100px 0 100px 0;
+    border-bottom: 1px solid #3e79bf;
+
+    >.title {
+        margin: 0;
+        padding: 0 0 2px 0;
+
+        color: #3e79bf;
+        font-size: 18px;
+
+        border-bottom: 1px solid #3e79bf;
+
+        font-family: "Exo 2", sans-serif;
+        font-size: 18px;
+    }
+
+    >.cards {
+        padding: 25px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include media-breakpoint-only(sm) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include media-breakpoint-only(xs) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.equipment-page-card {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #999999eb;
+
+    >.row-1 {
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    >.row-2 {
+        flex-grow: 1;
+    }
+
+    >.row-3 {}
+
+    >.row-4 {}
+}
+
+.equipment-page-card--title {
+    padding: 15px 15px 25px 15px;
+
+    .title {
+        margin: 0;
+        padding: 0;
+
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+
+        line-height: 22px;
+        color: #fafafa;
+    }
+}
+
+.equipment-page-card--info {
+    padding: 0 15px;
+
+    .info {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        .item {
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            color: #fafafa;
+
+            &:first-child {
+                margin: 0 0 5px 0;
+            }
+
+            &:last-child {
+                margin: 5px 0 0 0;
+            }
+        }
+    }
+}
+
+.equipment-page-card--more {
+    padding: 15px;
+    text-align: right;
+
+    .link {
+        display: inline-block;
+        text-decoration: none;
+        padding-bottom: 2px;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        color: #fafafa;
+        border-bottom: 1px solid #fafafa;
+
+        &:hover {
+            color: #dadada;
+            border-bottom: 1px solid #dadada;
+        }
+    }
+}

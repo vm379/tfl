@@ -103,7 +103,7 @@
     padding-top: 50px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
 
     @include media-breakpoint-only(xxl) {}
@@ -113,79 +113,71 @@
     @include media-breakpoint-only(lg) {}
 
     @include media-breakpoint-only(md) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
 
     @include media-breakpoint-only(sm) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
 
     @include media-breakpoint-only(xs) {
         grid-template-columns: 1fr;
+        gap: 25px;
     }
 }
 
 .news-post {
+    background-color: #ecf3f5;
 
-    .empty {
-        height: 45px;
+    display: flex;
+    flex-direction: column;
+
+    >.row-1 {}
+
+    >.row-2 {
+        flex-grow: 1;
     }
 
-    .container {
-        min-height: 350px;
-        padding: 0 39px 50px 39px;
+    >.row-3 {}
+}
 
-        background-color: rgba(153, 153, 153, 0.92);
+.news-post--info {
 
-        display: flex;
-        flex-direction: column;
+    .title {
+        padding: 15px;
 
-        @include media-breakpoint-only(xxl) {}
+        h4 {
+            margin: 0;
+            padding: 0;
 
-        @include media-breakpoint-only(xl) {}
+            font-family: "Exo 2", sans-serif;
+            font-size: 16px;
 
-        @include media-breakpoint-only(lg) {}
-
-        @include media-breakpoint-only(md) {}
-
-        @include media-breakpoint-only(sm) {
-            padding: 0 25px 50px 25px;
+            color: #3e79bf;
+            text-align: center;
+            line-height: 22px;
         }
+    }
 
-        @include media-breakpoint-only(xs) {
-            padding: 0 15px 50px 15px;
-        }
+    .description {
+        padding: 0 15px;
 
-        >.row-1 {
-            flex-basis: 250px;
-        }
+        p {
+            margin: 0;
+            padding: 0;
 
-        >.row-2 {
-            flex-grow: 1;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+
+            color: #555555;
+            line-height: 22px;
         }
     }
 }
 
-.news-post--preview-text {
-
-    p {
-        margin: 0;
-        padding: 0;
-
-        font-family: "Roboto", sans-serif;
-        font-size: 16px;
-        color: #4d4d4d;
-        line-height: 22px;
-    }
-}
-
-.news-post--inner {
-    height: 250px;
-    overflow: hidden;
-
-    margin-top: -45px;
-
-    position: relative;
+.news-post--img {
 
     img {
         display: block;
@@ -194,73 +186,14 @@
 }
 
 .news-post--more {
-    padding: 25px 0;
-    text-align: center;
-
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9373949408865109) 60%, rgba(0, 0, 0, 0.4387955011106005) 100%);
+    padding: 15px;
+    text-align: right;
 
     .link {
         display: inline-block;
-
-        padding-bottom: 2px;
         text-decoration: none;
-
+        color: #3e79bf;
+        border-bottom: 1px solid #3e79bf;
         font-family: "Roboto", sans-serif;
-        font-size: 18px;
-
-        color: #c0c0c0;
-        border-bottom: 1px solid #c0c0c0;
-
-        text-transform: uppercase;
     }
-}
-
-.news-post--title {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9373949408865109) 35%, rgba(0, 0, 0, 0.4387955011106005) 85%);
-
-    display: flex;
-    flex-direction: column;
-
-    >.row-1 {
-        flex-grow: 1;
-
-        .title {
-            text-align: center;
-            color: #c7c7c7;
-            font-family: "Exo 2", sans-serif;
-            font-size: 22px;
-            line-height: 28px;
-
-            @include media-breakpoint-only(xxl) {}
-
-            @include media-breakpoint-only(xl) {}
-
-            @include media-breakpoint-only(lg) {
-                padding: 0 25px;
-            }
-
-            @include media-breakpoint-only(md) {
-                padding: 0 50px;
-            }
-
-            @include media-breakpoint-only(sm) {
-                padding: 0 50px;
-            }
-
-            @include media-breakpoint-only(xs) {
-                padding: 0 15px;
-                font-size: 16px;
-            }
-        }
-    }
-
-    >.row-2 {}
 }
