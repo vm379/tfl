@@ -1,6 +1,4 @@
 .equipment-cards {
-    padding: 0 0 100px 0;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
@@ -60,9 +58,7 @@
     }
 }
 
-.equipment-blocks {
-    margin: 25px 0;
-}
+.equipment-blocks {}
 
 //equipment page
 .equipment-block {
