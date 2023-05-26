@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('layout-blocks/head/head.html', {"title":"About"})
+</head>
+
+<body class="body">
+    <div class="website">
+        <div class="container">
+
+            <!-- header -->
+            @@include('layout-blocks/header/header.html')
+            <!-- end header -->
+
+            <main class="main">
+                <div class="page">
+                    <div class="container">
+                        <div class="b-page-title">
+                            <h2 class="title">Завантаження</h2>
+                        </div>
+
+                        <article class="article">
+                            <table class="downloads">
+                                <thead>
+                                    <tr>
+                                        <th>Обладнання</th>
+                                        <th>Виробник</th>
+                                        <th>Тип</th>
+                                        <th>Посилання</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Операційні</td>
+                                        <td>NEXOR</td>
+                                        <td>Операційні освітлювачі NOVA.LIGHT СЕРІЇ 600 I 800</td>
+                                        <td class="td-link"><a href="" class="link">завантажити</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Операційні</td>
+                                        <td>NEXOR</td>
+                                        <td>Кріплення для монітора NOVA.LIGHT</td>
+                                        <td class="td-link"><a href="" class="link">завантажити</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Операційні</td>
+                                        <td>NEXOR</td>
+                                        <td>Операційні HD та 4K відеокамери NOVA.LIGHT</td>
+                                        <td class="td-link"><a href="" class="link">завантажити</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </div>
+                </div>
+            </main>
+
+            <!-- footer -->
+            @@include('layout-blocks/footer/footer.html')
+            <!-- end footer -->
+
+        </div>
+    </div>
+
+    <!-- mobile-menu -->
+    @@include('layout-blocks/menu/mobile.html')
+    <!-- end mobile-menu -->
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
