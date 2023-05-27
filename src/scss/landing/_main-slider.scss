@@ -181,7 +181,6 @@
 
 .website-titles {
     padding: 55px 10px 100px 20px;
-    font-family: "Roboto", sans-serif;
 
     position: absolute;
     top: 0;
@@ -218,7 +217,6 @@
     .title {
 
         .t {
-            color: #717171;
             font-size: 18px;
         }
     }
@@ -229,6 +227,8 @@
         .t {
             color: #ffffff;
             font-size: 60px;
+
+            line-height: 65px;
 
             @include media-breakpoint-only(xxl) {}
 
@@ -266,7 +266,7 @@
         }
 
         .t {
-            color: #717171;
+            line-height: 30px;
             font-size: 22px;
         }
     }

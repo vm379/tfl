@@ -127,7 +127,7 @@
         margin: 0;
         padding: 0 0 15px 0;
 
-        font-family: "Exo 2", sans-serif;
+        @include title-font();
         font-size: 18px;
 
         color: #3C3C3C;
@@ -179,11 +179,6 @@
             margin: 5px 0 0 0;
         }
 
-        font-family: "Roboto",
-        sans-serif;
-        font-size: 14px;
-        color: #717171;
-
         >.title {}
 
         >.t {}
@@ -195,11 +190,6 @@
 
     p {
         margin: 15px 0 15px 0;
-
-        font-family: "Roboto", sans-serif;
-        font-size: 16px;
-        color: #717171;
-        line-height: 22px;
 
         &:first-child {
             margin: 0 0 15px 0;
@@ -252,13 +242,11 @@
         }
 
         @include media-breakpoint-only(sm) {
-            padding-top: 25px;
             display: flex;
             justify-content: center;
         }
 
         @include media-breakpoint-only(xs) {
-            padding-top: 25px;
             display: flex;
             justify-content: center;
         }
@@ -279,13 +267,11 @@
         }
 
         @include media-breakpoint-only(sm) {
-            padding-top: 25px;
             display: flex;
             justify-content: center;
         }
 
         @include media-breakpoint-only(xs) {
-            padding-top: 25px;
             display: flex;
             justify-content: center;
         }
@@ -309,10 +295,7 @@
 
     .t {
         text-transform: uppercase;
-
-        font-family: "Exo 2", sans-serif;
         font-size: 14px;
-
         color: #3e79bf;
     }
 }
@@ -324,4 +307,20 @@
 .product-info--download-link {
     text-decoration: none;
     display: inline-block;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {
+        margin-bottom: 25px;
+    }
+
+    @include media-breakpoint-only(xs) {
+        margin-bottom: 25px;
+    }
 }

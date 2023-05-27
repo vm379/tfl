@@ -8,14 +8,11 @@ body {
     padding: 0;
     overflow-y: scroll;
 
+    @include text-font();
 
-    // margin: 0;
-    // padding: 0;
-    // overflow-y: scroll;
-    // font-family: "Roboto", sans-serif;
-    // font-size: 14px;
-    // color: #717171;
-    // line-height: 22px;
+    font-size: 14px;
+    color: #717171;
+    line-height: 22px;
 }
 
 .website {
@@ -184,9 +181,6 @@ body {
     >.container {
         margin: 0 auto;
 
-        // display: flex;
-        // flex-direction: row;
-
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -226,25 +220,13 @@ body {
             gap: 25px;
         }
 
-        >.col-1 {
-            // flex-basis: 25%;
-        }
+        >.col-1 {}
 
-        >.col-2 {
-            // flex-basis: 25%;
+        >.col-2 {}
 
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: center;
-        }
+        >.col-3 {}
 
-        >.col-3 {
-            // flex-basis: 25%;
-        }
-
-        >.col-4 {
-            // flex-basis: 25%;
-        }
+        >.col-4 {}
     }
 }
 
@@ -291,13 +273,13 @@ body {
         >.col-1 {
             flex-basis: 33.333%;
 
-            // @include media-breakpoint-only(xxl) {}
+            @include media-breakpoint-only(xxl) {}
 
-            // @include media-breakpoint-only(xl) {}
+            @include media-breakpoint-only(xl) {}
 
-            // @include media-breakpoint-only(lg) {}
+            @include media-breakpoint-only(lg) {}
 
-            // @include media-breakpoint-only(md) {}
+            @include media-breakpoint-only(md) {}
 
             @include media-breakpoint-only(sm) {
                 padding-top: 25px;
@@ -313,13 +295,13 @@ body {
         >.col-2 {
             flex-basis: 33.333%;
 
-            // @include media-breakpoint-only(xxl) {}
+            @include media-breakpoint-only(xxl) {}
 
-            // @include media-breakpoint-only(xl) {}
+            @include media-breakpoint-only(xl) {}
 
-            // @include media-breakpoint-only(lg) {}
+            @include media-breakpoint-only(lg) {}
 
-            // @include media-breakpoint-only(md) {}
+            @include media-breakpoint-only(md) {}
 
             @include media-breakpoint-only(sm) {
                 padding-top: 10px;
@@ -343,13 +325,13 @@ body {
             flex-direction: row;
             justify-content: flex-end;
 
-            // @include media-breakpoint-only(xxl) {}
+            @include media-breakpoint-only(xxl) {}
 
-            // @include media-breakpoint-only(xl) {}
+            @include media-breakpoint-only(xl) {}
 
-            // @include media-breakpoint-only(lg) {}
+            @include media-breakpoint-only(lg) {}
 
-            // @include media-breakpoint-only(md) {}
+            @include media-breakpoint-only(md) {}
 
             @include media-breakpoint-only(sm) {
                 padding-bottom: 25px;

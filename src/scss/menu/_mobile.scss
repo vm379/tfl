@@ -33,7 +33,6 @@
     transition: transform .2s linear;
 
     background: #A1A1A1;
-    overflow: scroll;
 
     .top {
         width: 225px;
@@ -61,7 +60,6 @@
             padding: 0;
             outline: none;
 
-            font-family: "Exo 2", sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 12px;
@@ -90,7 +88,6 @@
             display: block;
             text-decoration: none;
 
-            font-family: "Roboto", sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 18px;

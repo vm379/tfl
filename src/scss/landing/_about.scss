@@ -104,8 +104,8 @@
         margin: 0;
         padding: 0 0 10px 0;
 
-        color: #717171;
-        font-family: "Exo 2", sans-serif;
+        @include title-font();
+        font-size: 22px;
 
         position: relative;
 
@@ -130,15 +130,13 @@
     .more {
 
         .link {
+            display: inline-block;
             padding-bottom: 2px;
 
-            display: inline-block;
-
-            font-family: "Roboto", sans-serif;
             font-size: 18px;
 
             color: #99bdd1;
-            border-bottom: 1px solid;
+            border-bottom: 1px solid #99bdd1;
             text-decoration: none;
         }
     }
@@ -150,20 +148,12 @@
     p {
         margin: 15px 0 15px 0;
         padding: 0;
-
-        font-family: "Roboto", sans-serif;
-        font-size: 16px;
-
-        color: #717171;
-        line-height: 22px;
     }
 }
 
 .about--col-2 {
     column-count: 2;
     column-gap: 30px;
-
-    text-align: justify;
 
     @include media-breakpoint-only(xxl) {}
 
@@ -188,15 +178,12 @@
     }
 
     p {
+        display: inline;
+
         margin: 0;
         padding: 0;
 
-        display: inline;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-
-        color: #717171;
-        line-height: 22px;
+        @include text-font();
 
         @include media-breakpoint-only(xxl) {}
 
