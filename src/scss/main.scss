@@ -31,3 +31,8 @@
 
 // mobile
 @import "./menu/mobile";
+
+a,
+a:hover {
+    transition: all .3s ease
+}

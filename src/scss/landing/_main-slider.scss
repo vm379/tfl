@@ -215,6 +215,7 @@
     }
 
     .title {
+        padding-bottom: 5px;
 
         .t {
             font-size: 18px;
@@ -225,10 +226,9 @@
         flex-grow: 1;
 
         .t {
+            font-size: 50px;
+            line-height: 50px;
             color: #ffffff;
-            font-size: 60px;
-
-            line-height: 65px;
 
             @include media-breakpoint-only(xxl) {}
 
@@ -266,8 +266,8 @@
         }
 
         .t {
-            line-height: 30px;
-            font-size: 22px;
+            font-size: 20px;
+            line-height: 25px;
         }
     }
 }
