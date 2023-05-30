@@ -1,21 +1,52 @@
 .contacts {
 
     >.container {
+        display: flex;
+        flex-direction: row;
+
         @include media-breakpoint-only(xxl) {}
 
         @include media-breakpoint-only(xl) {}
 
         @include media-breakpoint-only(lg) {}
 
-        @include media-breakpoint-only(md) {}
+        @include media-breakpoint-only(md) {
+            flex-direction: column;
+        }
 
-        @include media-breakpoint-only(sm) {}
+        @include media-breakpoint-only(sm) {
+            flex-direction: column;
+        }
 
-        @include media-breakpoint-only(xs) {}
+        @include media-breakpoint-only(xs) {
+            flex-direction: column;
+        }
 
-        >.col-1 {}
+        >.col-1 {
+            flex-basis: 50%;
 
-        >.col-2 {}
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {
+                flex-basis: auto;
+            }
+
+            @include media-breakpoint-only(sm) {
+                flex-basis: auto;
+            }
+
+            @include media-breakpoint-only(xs) {
+                flex-basis: auto;
+            }
+        }
+
+        >.col-2 {
+            flex-basis: 50%;
+        }
     }
 }
 
@@ -79,6 +110,7 @@
     .address {
 
         .t {
+            display: block;
             text-decoration: none;
             font-size: 16px;
         }

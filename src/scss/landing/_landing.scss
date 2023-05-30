@@ -1,3 +1,21 @@
 .b-landing {
     margin: 100px 0 100px;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        margin: 50px 0 50px;
+    }
+
+    @include media-breakpoint-only(sm) {
+        margin: 50px 0 50px;
+    }
+
+    @include media-breakpoint-only(xs) {
+        margin: 50px 0 50px;
+    }
 }

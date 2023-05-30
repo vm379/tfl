@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('layout-blocks/head/head.html', {"title":"Equipment Page"})
+</head>
+
+<body class="body">
+    <div class="website">
+        <div class="container">
+
+            <!-- header -->
+            @@include('layout-blocks/header/header.html')
+            <!-- end header -->
+
+            <main class="main">
+                <div class="page">
+                    <div class="container">
+                        <div class="b-page-title">
+                            <h2 class="title">Нейрохірургія</h2>
+                        </div>
+
+                        <article class="article">
+                            <p>Сьогодні проблеми з серцем є досить поширеною та небезпечною проблемою, що стосується як
+                                людей старшого віку, так і молоді. Це викликано в більшості випадків вродженими вадами
+                                серцево-судинної системи, проте велика кількість людей звертається із проблемами,
+                                викликаними поганою екологією, способом життя людини та іншими зовнішніми факторами.</p>
+
+                            <p>Робота лікаря-кардіолога є надзвичайно важкою, важливою та відповідальною, і не менш
+                                важливою частиною цієї роботи є медичні інструменти та обладнання, які допоможуть лікарю
+                                поставити точний діагноз та провести лікування.</p>
+
+                            <div class="cardiology-page--download">
+                                <a href="[[*file]]" class="product-info--download-link">
+                                    <div class="product-info-action--btn">
+                                        <span class="t">завантажити каталог</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </main>
+
+            <!-- footer -->
+            @@include('layout-blocks/footer/footer.html')
+            <!-- end footer -->
+
+        </div>
+    </div>
+
+    <!-- mobile-menu -->
+    @@include('layout-blocks/menu/mobile.html')
+    <!-- end mobile-menu -->
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
