@@ -3,6 +3,9 @@
 
 <head>
     @@include('layout-blocks/head/head.html', {"title":"Home"})
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body class="body">
@@ -25,11 +28,11 @@
                                         </div>
 
                                         <div class="name">
-                                            <span class="t">Технології <br> для життя</span>
+                                            <span class="t">Технології для життя</span>
                                         </div>
 
                                         <div class="motto">
-                                            <span class="t">медичне обладнання <br> від кращих
+                                            <span class="t">медичне обладнання від кращих
                                                 виробників</span>
                                         </div>
                                     </div>
@@ -178,8 +181,8 @@
                                 <div class="b-equipment-slider">
                                     <div class="col-1">
                                         <div class="b-equipment-slider--col-1">
-                                            <ul class="b-equipment-slider--menu">
-                                                <li class="item"><span class="t">STILLE</span></li>
+                                            <ul id="esl-1--menu" class="b-equipment-slider--menu">
+                                                <li class="item active-item"><span class="t">STILLE</span></li>
                                                 <li class="item"><span class="t">INTRASENSE</span></li>
                                                 <li class="item"><span class="t">STARMED</span></li>
                                                 <li class="item"><span class="t">MEDTRON</span></li>
@@ -190,7 +193,55 @@
                                     <div class="col-2">
 
                                         <!-- slider down-lg: display: none; -->
-                                        <ul class="b-equipment-slides">
+                                        <ul id="esl-1--slides" class="b-equipment-slides">
+                                            <li class="item active-slide">
+                                                <img src="../img/radiology-slider/medtron-slide.png" alt="">
+
+                                                <div class="b-equipment-slide--description">
+                                                    <div class="container">
+                                                        <p>
+                                                            STILLE
+                                                        </p>
+
+                                                        <div class="more">
+                                                            <a href="" class="link">Детальніше</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">
+                                                <img src="../img/radiology-slider/medtron-slide.png" alt="">
+
+                                                <div class="b-equipment-slide--description">
+                                                    <div class="container">
+                                                        <p>
+                                                            INTRASENSE
+                                                        </p>
+
+                                                        <div class="more">
+                                                            <a href="" class="link">Детальніше</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">
+                                                <img src="../img/radiology-slider/medtron-slide.png" alt="">
+
+                                                <div class="b-equipment-slide--description">
+                                                    <div class="container">
+                                                        <p>
+                                                            STARMED
+                                                        </p>
+
+                                                        <div class="more">
+                                                            <a href="" class="link">Детальніше</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
                                             <li class="item">
                                                 <img src="../img/radiology-slider/medtron-slide.png" alt="">
 
@@ -216,8 +267,8 @@
                                         </ul>
                                         <!-- end -->
 
-                                        <!-- slider for mobile devices with manufacturers links -->
-
+                                        <!-- mobile -->
+                                        <div class="mobile-equipment-slides"></div>
                                     </div>
                                 </div>
                             </div>
@@ -282,8 +333,8 @@
                                 <div class="b-equipment-slider">
                                     <div class="col-1">
                                         <div class="b-equipment-slider--col-1">
-                                            <ul class="b-equipment-slider--menu">
-                                                <li class="item"><span class="t">NSK</span></li>
+                                            <ul id="esl-2--menu" class="b-equipment-slider--menu">
+                                                <li class="item active-item"><span class="t">NSK</span></li>
                                                 <li class="item"><span class="t">EVONOS</span></li>
                                                 <li class="item"><span class="t">MISONIX</span></li>
                                                 <li class="item"><span class="t">MIZUHO</span></li>
@@ -295,22 +346,78 @@
                                     <div class="col-2">
 
                                         <!-- slider down-lg: display: none; -->
-                                        <ul class="b-equipment-slides">
+                                        <ul id="esl-2--slides" class="b-equipment-slides">
+                                            <li class="item active-slide">
+                                                <img src="../img/radiology-slider/medtron-slide.png" alt="">
+
+                                                <div class="b-equipment-slide--description">
+                                                    <div class="container">
+                                                        <p>
+                                                            NSK
+                                                        </p>
+
+                                                        <div class="more">
+                                                            <a href="" class="link">Детальніше</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
                                             <li class="item">
                                                 <img src="../img/radiology-slider/medtron-slide.png" alt="">
 
                                                 <div class="b-equipment-slide--description">
                                                     <div class="container">
                                                         <p>
-                                                            Компанія evonos GmbH & Co. KG досягає прогресу в області
-                                                            медичних технологій шляхом розробки та виготовлення
-                                                            інструментів для нейрохірургії, які корисні як для
-                                                            хірургів, так і для пацієнтів. Дані товари і послуги
-                                                            призначені
-                                                            для забезпечення надійної діагностики стану здоров'я
-                                                            пацієнтів, малоінвазивного лікування, спрощення
-                                                            операційних
-                                                            процедур і поліпшення якості життя.
+                                                            EVONOS
+                                                        </p>
+
+                                                        <div class="more">
+                                                            <a href="" class="link">Детальніше</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">
+                                                <img src="../img/radiology-slider/medtron-slide.png" alt="">
+
+                                                <div class="b-equipment-slide--description">
+                                                    <div class="container">
+                                                        <p>
+                                                            MISONIX
+                                                        </p>
+
+                                                        <div class="more">
+                                                            <a href="" class="link">Детальніше</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">
+                                                <img src="../img/radiology-slider/medtron-slide.png" alt="">
+
+                                                <div class="b-equipment-slide--description">
+                                                    <div class="container">
+                                                        <p>
+                                                            MIZUHO
+                                                        </p>
+
+                                                        <div class="more">
+                                                            <a href="" class="link">Детальніше</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">
+                                                <img src="../img/radiology-slider/medtron-slide.png" alt="">
+
+                                                <div class="b-equipment-slide--description">
+                                                    <div class="container">
+                                                        <p>
+                                                            GLARONAV
                                                         </p>
 
                                                         <div class="more">
@@ -322,8 +429,8 @@
                                         </ul>
                                         <!-- end -->
 
-                                        <!-- slider for mobile devices with manufacturers links -->
-
+                                        <!-- mobile -->
+                                        <div class="mobile-equipment-slides"></div>
                                     </div>
                                 </div>
                             </div>

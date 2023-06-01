@@ -1,0 +1,21 @@
+.b-equipment-slides {
+
+    .item {
+        display: none;
+    }
+
+    .active-slide {
+        display: block;
+    }
+}
+
+.active-item {
+
+    .t {
+        color: #3f3f3f !important;
+    }
+}
+
+.mobile-equipment-slides {
+    display: none;
+}

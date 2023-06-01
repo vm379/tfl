@@ -271,6 +271,21 @@
 
     .name {
         flex-grow: 1;
+        width: 300px;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {
+            width: 270px;
+        }
 
         .t {
             font-size: 50px;
@@ -294,6 +309,8 @@
     }
 
     .motto {
+        width: 230px;
+
         @include media-breakpoint-only(xxl) {}
 
         @include media-breakpoint-only(xl) {}
