@@ -79,14 +79,17 @@
             @include media-breakpoint-only(lg) {}
 
             @include media-breakpoint-only(md) {
+                padding-top: 25px;
                 flex-basis: auto;
             }
 
             @include media-breakpoint-only(sm) {
+                padding-top: 25px;
                 flex-basis: auto;
             }
 
             @include media-breakpoint-only(xs) {
+                padding-top: 25px;
                 flex-basis: auto;
             }
         }
@@ -115,30 +118,34 @@
     }
 }
 
+.manufacturer-logo {
+    width: 100px;
+    height: auto;
+
+    display: block;
+    margin: 0 auto;
+}
+
 .manufacturer-title {
+    padding-bottom: 10px;
+
     @include media-breakpoint-only(xxl) {}
 
     @include media-breakpoint-only(xl) {}
 
     @include media-breakpoint-only(lg) {}
 
-    @include media-breakpoint-only(md) {
-        padding-bottom: 15px;
-    }
+    @include media-breakpoint-only(md) {}
 
-    @include media-breakpoint-only(sm) {
-        padding-bottom: 15px;
-    }
+    @include media-breakpoint-only(sm) {}
 
-    @include media-breakpoint-only(xs) {
-        padding-bottom: 15px;
-    }
+    @include media-breakpoint-only(xs) {}
 
     .title {
         margin: 0;
         padding: 0;
 
-        font-size: 18px;
+        font-size: 16px;
 
         color: #3e79bf;
         text-align: center;

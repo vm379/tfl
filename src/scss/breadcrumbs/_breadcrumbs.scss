@@ -1,0 +1,94 @@
+.breadcrumbs {
+    background-color: #99BDD1;
+    margin: 10px 0;
+    padding: 10px 0;
+
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        display: none;
+    }
+
+    @include media-breakpoint-only(sm) {
+        display: none;
+    }
+
+    @include media-breakpoint-only(xs) {
+        display: none;
+    }
+
+    >.container {
+        margin: 0 auto;
+
+        @include media-breakpoint-only(xxl) {
+            width: 1320px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            width: 1140px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            width: 960px;
+        }
+
+        @include media-breakpoint-only(md) {
+            width: 720px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            width: auto;
+            padding: 0 25px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            width: auto;
+            padding: 0 10px;
+        }
+    }
+}
+
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+
+    li {
+        font-size: 13px;
+        color: #717171;
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .separator {
+            margin: 0 5px;
+        }
+    }
+
+    .breadcrumb-item {
+
+        a {
+            color: #717171;
+            text-decoration: none;
+
+            &:hover {
+                color: #535353;
+            }
+        }
+    }
+
+    .active {
+
+        a {}
+    }
+}

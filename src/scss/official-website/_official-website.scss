@@ -1,0 +1,51 @@
+.official-website {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border: 1px solid #3e79bf;
+    background-color: #ecf3f5;
+
+    padding: 25px 0;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include media-breakpoint-only(xs) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    >.col-1 {
+
+        .t {
+            font-size: 16px;
+        }
+    }
+
+    >.col-2 {
+        padding-left: 15px;
+
+        .link {
+            text-decoration: none;
+            font-size: 16px;
+            color: #3e79bf;
+            border-bottom: 1px solid #00377a;
+
+            &:hover {
+                color: #1f5fad;
+                border-bottom: 1px solid #1f5fad;
+            }
+        }
+    }
+}

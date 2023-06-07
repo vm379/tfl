@@ -71,4 +71,25 @@
     p {
         margin: 15px 0 15px 0;
     }
+
+    iframe {
+        display: block;
+        margin: 25px auto;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {
+            width: 100% !important;
+        }
+
+        @include media-breakpoint-only(xs) {
+            width: 100% !important;
+        }
+    }
 }
