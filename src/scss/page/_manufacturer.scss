@@ -118,12 +118,27 @@
     }
 }
 
-.manufacturer-logo {
-    width: 100px;
-    height: auto;
+.manufacturer-col-1 {
 
-    display: block;
-    margin: 0 auto;
+    >.row-1 {
+
+        img {
+            width: 145px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    >.row-2 {
+        padding: 10px 15px 0 15px;
+        text-align: center;
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
 
 .manufacturer-title {
